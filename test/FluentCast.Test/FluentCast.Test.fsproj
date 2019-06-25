@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <RootNamespace>FluentCastTest</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="ConvertUtilsTest.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\FluentCast\FluentCast.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FsUnit" Version="3.4.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.1" />
+    </ItemGroup>
+    
+</Project>
