@@ -4,8 +4,6 @@ namespace FluentCast
 {
     public static class ConvertExtensions
     {
-        #region Generic data type conversion
-
         public static T ConvertTo<T>(this object value, Func<object, T> changeFunction)
         {
             if (value is T @out) return @out;
@@ -30,6 +28,22 @@ namespace FluentCast
             }
         }
 
-        #endregion
+
+        /*public static T ConvertToSafe<T>(this object value, Func<object, T> changeFunction, T @default)
+        {
+            try
+            {
+                switch (value)
+                {
+                    case null: return @default;
+                    case string str when string.IsNullOrWhiteSpace(str): return @default;
+                    default: return value.ConvertTo(changeFunction);
+                }
+            }
+            catch
+            {
+                return @default;
+            }
+        }*/
     }
 }

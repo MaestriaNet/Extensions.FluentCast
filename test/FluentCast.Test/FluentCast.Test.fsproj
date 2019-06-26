@@ -6,7 +6,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="ConvertUtilsTest.fs" />
+        <Compile Include="ConstTest.fs" />
+        <Compile Include="ToDateTimeTest.fs" />
+        <Compile Include="ToDecimalTest.fs" />
+        <Compile Include="ToDoubleTest.fs" />
+        <Compile Include="ToFloatTest.fs" />
+        <Compile Include="ToGuidTest.fs" />
+        <Compile Include="ToInt16Test.fs" />
+        <Compile Include="ToInt32Test.fs" />
+        <Compile Include="ToInt64Test.fs" />
+        <Compile Include="ToStringSafeTest.fs" />
     </ItemGroup>
 
     <ItemGroup>
