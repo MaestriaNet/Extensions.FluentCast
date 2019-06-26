@@ -8,55 +8,55 @@ open FluentCastTestConst
 /// ToInt64
 /// ===========================================
 [<Test>]
-let ``Convert String to Long``() = StringFixedPointInput.ToInt64() |> should equal FixedPointExpected
+let ``Convert String to Int64``() = StringFixedPointInput.ToInt64() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert String to Long exception``() = (fun () -> StringBrokenInput.ToInt64() |> ignore) |> should throw typeof<System.FormatException>
+let ``Convert String to Int64 exception``() = (fun () -> StringBrokenInput.ToInt64() |> ignore) |> should throw typeof<System.FormatException>
 
 [<Test>]
-let ``Convert Short to Long``() = ShortInput.ToInt64() |> should equal FixedPointExpected
+let ``Convert Int16 to Int64``() = Int16Input.ToInt64() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Int to Long``() = IntInput.ToInt64() |> should equal FixedPointExpected
+let ``Convert Int32 to Int64``() = Int32Input.ToInt64() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Long to Long``() = LongInput.ToInt64() |> should equal FixedPointExpected
+let ``Convert Int64 to Int64``() = Int64Input.ToInt64() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Decimal to Long``() = DecimalInput.ToInt64() |> should equal FixedPointExpected
+let ``Convert Decimal to Int64``() = DecimalInput.ToInt64() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Float to Long``() = FloatInput.ToInt64() |> should equal FixedPointExpected
+let ``Convert Float to Int64``() = FloatInput.ToInt64() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Double to Long``() = DoubleInput.ToInt64() |> should equal FixedPointExpected
+let ``Convert Double to Int64``() = DoubleInput.ToInt64() |> should equal FixedPointExpected
 
 /// ===========================================
 /// ToInt64Safe
 /// ===========================================
 [<Test>]
-let ``Convert String to Long Safe``() = StringFixedPointInput.ToInt64Safe() |> should equal FixedPointExpected
+let ``Convert String to Int64 Safe``() = StringFixedPointInput.ToInt64Safe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert String broken to Long Safe Nullable``() = StringBrokenInput.ToInt64Safe() |> should be null
+let ``Convert String broken to Int64 Safe Nullable``() = StringBrokenInput.ToInt64Safe() |> should be null
 
 [<Test>]
-let ``Convert String broken to Long Safe``() = StringBrokenInput.ToInt64Safe(LongInput) |> should equal FixedPointExpected
+let ``Convert String broken to Int64 Safe``() = StringBrokenInput.ToInt64Safe(Int64Input) |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Short to Long Safe``() = ShortInput.ToInt64Safe() |> should equal FixedPointExpected
+let ``Convert Int16 to Int64 Safe``() = Int16Input.ToInt64Safe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Int to Long Safe``() = IntInput.ToInt64Safe() |> should equal FixedPointExpected
+let ``Convert Int32 to Int64 Safe``() = Int32Input.ToInt64Safe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Long to Long Safe``() = LongInput.ToInt64Safe() |> should equal FixedPointExpected
+let ``Convert Int64 to Int64 Safe``() = Int64Input.ToInt64Safe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Decimal to Long Safe``() = DecimalInput.ToInt64Safe() |> should equal FixedPointExpected
+let ``Convert Decimal to Int64 Safe``() = DecimalInput.ToInt64Safe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Float to Long Safe``() = FloatInput.ToInt64Safe() |> should equal FixedPointExpected
+let ``Convert Float to Int64 Safe``() = FloatInput.ToInt64Safe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Double to Long Safe``() = DoubleInput.ToInt64Safe() |> should equal FixedPointExpected
+let ``Convert Double to Int64 Safe``() = DoubleInput.ToInt64Safe() |> should equal FixedPointExpected

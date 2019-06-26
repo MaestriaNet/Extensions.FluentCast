@@ -11,7 +11,7 @@ open FluentCastTestConst
 let ``Convert String to String Safe``() = StringBrokenInput.ToStringSafe() |> should equal StringBrokenInput
 
 [<Test>]
-let ``Convert Int to String Safe``() = IntInput.ToStringSafe() |> should equal (FixedPointExpected.ToString())
+let ``Convert Int32 to String Safe``() = Int32Input.ToStringSafe() |> should equal (FixedPointExpected.ToString())
 
 [<Test>]
 let ``Convert Decimal to String Safe``() = DecimalInput.ToStringSafe() |> should equal (FloatingPointExpected.ToString())

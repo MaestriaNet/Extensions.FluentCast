@@ -23,13 +23,13 @@ let ``Convert String pt-BR to Double invariant - Floating Point``() = StringFloa
 let ``Convert String to Double exception``() = (fun () -> StringBrokenInput.ToDouble() |> ignore) |> should throw typeof<System.FormatException>
 
 [<Test>]
-let ``Convert Short to Double``() = ShortInput.ToDouble() |> should equal FixedPointExpected
+let ``Convert Int16 to Double``() = Int16Input.ToDouble() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Int to Double``() = IntInput.ToDouble() |> should equal FixedPointExpected
+let ``Convert Int32 to Double``() = Int32Input.ToDouble() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Long to Double``() = LongInput.ToDouble() |> should equal FixedPointExpected
+let ``Convert Int64 to Double``() = Int64Input.ToDouble() |> should equal FixedPointExpected
 
 [<Test>]
 let ``Convert Decimal to Double``() = DecimalInput.ToDouble() |> should (equalWithin 0.0001) FloatingPointExpected
@@ -62,13 +62,13 @@ let ``Convert String broken to Double Safe Nullable``() = StringBrokenInput.ToDo
 let ``Convert String broken to Double Safe``() = StringBrokenInput.ToDoubleSafe(DoubleInput) |> should (equalWithin 0.0001) FloatingPointExpected
 
 [<Test>]
-let ``Convert Short to Double Safe``() = ShortInput.ToDoubleSafe() |> should equal FixedPointExpected
+let ``Convert Int16 to Double Safe``() = Int16Input.ToDoubleSafe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Int to Double Safe``() = IntInput.ToDoubleSafe() |> should equal FixedPointExpected
+let ``Convert Int32 to Double Safe``() = Int32Input.ToDoubleSafe() |> should equal FixedPointExpected
 
 [<Test>]
-let ``Convert Long to Double Safe``() = LongInput.ToDoubleSafe() |> should equal FixedPointExpected
+let ``Convert Int64 to Double Safe``() = Int64Input.ToDoubleSafe() |> should equal FixedPointExpected
 
 [<Test>]
 let ``Convert Decimal to Double Safe``() = DecimalInput.ToDoubleSafe() |> should (equalWithin 0.0001) FloatingPointExpected

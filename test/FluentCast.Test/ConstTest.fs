@@ -3,14 +3,14 @@ open System
 open System.Globalization
 
 /// ===========================================
-/// Diferentes tipos de dados para Convert
+/// Input values in many data types
 /// ===========================================
 let StringFixedPointInput: string = "16"
 let StringFloatingPointInvariantInput: string = "16.1"
 let StringFloatingPointPtBtSourceInput: string = "16,1"
-let ShortInput: int16 = 16s
-let IntInput: int = 16
-let LongInput: int64 = 16L
+let Int16Input: int16 = 16s
+let Int32Input: int = 16
+let Int64Input: int64 = 16L
 let DecimalInput: decimal = 16.1m
 let FloatInput: float32 = 16.1F
 let DoubleInput: double = 16.1
