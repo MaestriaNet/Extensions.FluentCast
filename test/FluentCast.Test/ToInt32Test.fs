@@ -14,6 +14,9 @@ let ``Convert String to Int32``() = StringFixedPointInput.ToInt32() |> should eq
 let ``Convert String to Int exception``() = (fun () -> StringBrokenInput.ToInt32() |> ignore) |> should throw typeof<System.FormatException>
 
 [<Test>]
+let ``Convert floating point string to Int32``() = StringFloatingPointInvariantInput.ToInt32() |> should equal FixedPointExpected
+
+[<Test>]
 let ``Convert Int16 to Int32``() = Int16Input.ToInt32() |> should equal FixedPointExpected
 
 [<Test>]

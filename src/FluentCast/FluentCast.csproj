@@ -10,6 +10,7 @@
         <PackageTags>fluent cast data conversion functional</PackageTags>
         <PackageLicenseUrl>https://github.com/fabionaspolini/FluentCast/blob/master/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/fabionaspolini/FluentCast</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/fabionaspolini/FluentCast</PackageProjectUrl>
     </PropertyGroup>
 
     <PropertyGroup>
