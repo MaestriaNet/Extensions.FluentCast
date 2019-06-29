@@ -1,4 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <PackageId>FluentCast</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Fábio Monteiro Naspolini</Authors>
+        <Company>Fábio Monteiro Naspolini</Company>
+        <Title>FluentCast - Simple data convert</Title>
+        <Description>This package provider a fluent syntax to simple data conversions</Description>
+        <PackageTags>fluent cast data conversion functional</PackageTags>
+        <PackageLicenseUrl>https://github.com/fabionaspolini/FluentCast/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/fabionaspolini/FluentCast</RepositoryUrl>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
 
     <PropertyGroup>
         <TargetFramework>netstandard1.0</TargetFramework>
