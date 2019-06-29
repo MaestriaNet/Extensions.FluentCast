@@ -11,6 +11,7 @@
         <PackageLicenseUrl>https://github.com/fabionaspolini/FluentCast/blob/master/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/fabionaspolini/FluentCast</RepositoryUrl>
         <PackageProjectUrl>https://github.com/fabionaspolini/FluentCast</PackageProjectUrl>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <PropertyGroup>
