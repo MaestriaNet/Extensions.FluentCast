@@ -32,7 +32,7 @@ DateTime datePtValue = "29/06/2019 13:31:59".ToDateTime(CultureInfo.GetCultureIn
 Guid guidValue = "a7fb69ba-7922-4d88-9569-d8d0d6641b86".ToGuid();
 
 // all to string
-string stringValue = ((object) null).ToStringSafe(); // out is a empty string
+string stringValue = ((object) null).ToStringSafe(); // out is a null string
 
 // safe conversion support
 "broken input".ToInt32Safe(); // out is nullable int
