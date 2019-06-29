@@ -1,14 +1,20 @@
+using System;
 using FluentCast.Settings;
 
 namespace FluentCast
 {
     public static class GlobalSettings
     {
-        private static FluentCastSettingsBuilder _builder;
+        static GlobalSettings()
+        {
+            Builder = new FluentCastSettingsBuilder(Properties);
+        }
+
+        private static readonly FluentCastSettingsBuilder Builder;
 
         public static FluentCastSettings Properties { get; } = new FluentCastSettings();
 
-        public static FluentCastSettingsBuilder Configure() =>
-            _builder ?? (_builder = new FluentCastSettingsBuilder(Properties));
+
+        public static void Configure(Action<FluentCastSettingsBuilder> cfg) => cfg(Builder);
     }
 }
