@@ -1,4 +1,9 @@
 # FluentCast
+
+[![Build Status](https://img.shields.io/appveyor/ci/fabionaspolini/fluentcast/master.svg)](https://ci.appveyor.com/project/fabionaspolini/fluentcast)
+[![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast)
+
+### What is AutoMapper?
 This package provider a fluent syntax to simple data conversions
 
 ### How do I get started?
@@ -15,8 +20,8 @@ Then in your application code, use fluent syntax:
 "150".ToInt16();        // string to int16 conversion
 "150".ToInt32();        // string to int32 conversion
 "150".ToInt64();        // string to int64 conversion
-"150.345".ToInt32();    // string to int32 conversion, out is a int32 = 150
-150.345.ToInt32();      // double to int32 covnersion, out is a int32 = 150
+"150.345".ToInt32();    // string to int32 conversion, output is a int32 = 150
+150.345.ToInt32();      // double to int32 covnersion, output is a int32 = 150
 
 // all to floating point
 "150.45".ToFloat();                                         // use default number culture configured at the application startup
@@ -29,16 +34,16 @@ Then in your application code, use fluent syntax:
 "29/06/2019 13:31:59".ToDateTime(CultureInfo.GetCultureInfo("pt-BR"));  // use Brazil datetime format "dd/MM/yyyy HH:mm"
 
 // string to guid
-"a7fb69ba-7922-4d88-9569-d8d0d6641b86".ToGuid(); // out is a Guid 
+"a7fb69ba-7922-4d88-9569-d8d0d6641b86".ToGuid(); // output is a Guid 
 
 // all to string
-string stringValue = ((object) null).ToStringSafe(); // out is a null string
+((object) null).ToStringSafe(); // output is a null string
 
 // safe conversion support
-"broken input".ToInt32Safe();                   // out is nullable int
-"broken input".ToInt32Safe(-1);                 // out is -1
-"broken input".ToDateTimeSafe();                // out is nullable DateTime
-"broken input".ToDateTimeSafe(DateTime.Today);  // out is today DateTime
+"broken input".ToInt32Safe();                   // output is nullable int
+"broken input".ToInt32Safe(-1);                 // output is -1
+"broken input".ToDateTimeSafe();                // output is nullable DateTime
+"broken input".ToDateTimeSafe(DateTime.Today);  // output is today DateTime
 
 // exception throws - Broken inputs values throw exeption on unsafe mode
 "broken input".ToInt32();
