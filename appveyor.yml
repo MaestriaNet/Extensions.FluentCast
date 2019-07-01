@@ -1,6 +1,6 @@
 #version: '1.0.2.{build}'
 version: '1.0.2.{build}'
-package_version: $(appveyor_build_version)
+package_version: '1.0.2'
 image: Visual Studio 2017
 configuration: Release
 dotnet_csproj:
