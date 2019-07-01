@@ -1,4 +1,3 @@
-version: '{version}.{build}'
 image: Visual Studio 2017
 configuration: Release
 dotnet_csproj:
@@ -9,6 +8,7 @@ dotnet_csproj:
   assembly_version: '{version}'
   file_version: '{version}'
   informational_version: '{version}'
+version: '{version}.{build}'
 before_build:
   - ps: dotnet --version
 build_script:
