@@ -1,4 +1,4 @@
-module FluentCastTestConst
+module FluentCast.Test.Const
 open System
 open System.Globalization
 
@@ -33,4 +33,7 @@ let DateExpected: DateTime = DateTime.ParseExact("2019-05-30", "yyyy-MM-dd", Cul
 let DateTimeExpected: DateTime = DateTime.ParseExact("2019-05-30 23:41:15", "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)
 let GuidExpected: Guid = Guid.Parse(StringGuidInput)
 
+/// ===========================================
+/// Constants
+/// ===========================================
 let CulturePtBr = CultureInfo.CreateSpecificCulture("pt-BR")

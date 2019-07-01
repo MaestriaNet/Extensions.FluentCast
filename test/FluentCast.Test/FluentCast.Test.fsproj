@@ -2,11 +2,22 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
-        <RootNamespace>FluentCastTest</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\src\FluentCast\FluentCast.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Appveyor.TestLogger" Version="2.0.0" />
+        <PackageReference Include="FsUnit" Version="3.4.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.1" />
+    </ItemGroup>
+     
+    <ItemGroup>
         <Compile Include="ConstTest.fs" />
+        <Compile Include="Internal\ConvertExtensionsTest.fs" />
         <Compile Include="ToDateTimeTest.fs" />
         <Compile Include="ToDecimalTest.fs" />
         <Compile Include="ToDoubleTest.fs" />
@@ -17,16 +28,4 @@
         <Compile Include="ToInt64Test.fs" />
         <Compile Include="ToStringSafeTest.fs" />
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\..\src\FluentCast\FluentCast.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Appveyor.TestLogger" Version="2.0.0" />
-        <PackageReference Include="FsUnit" Version="3.4.0" />
-        <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.1" />
-    </ItemGroup>
-    
 </Project>

@@ -1,20 +1,25 @@
-﻿module FluentCastTest.``To String Safe``
+﻿namespace FluentCast.Test.``To String``
 open FsUnit
 open NUnit.Framework
 open FluentCast
-open FluentCastTestConst
+open FluentCast.Test.Const
 
-/// ===========================================
-/// ToStringSafe
-/// ===========================================
-[<Test>]
-let ``Convert String to String Safe``() = StringBrokenInput.ToStringSafe() |> should equal StringBrokenInput
+module ``Safe`` =
+    type ExceptionToStringType =
+        {TestId: int}
+        override m.ToString() = (0/0).ToString()
 
-[<Test>]
-let ``Convert Int32 to String Safe``() = Int32Input.ToStringSafe() |> should equal (FixedPointExpected.ToString())
+    [<Test>]
+    let ``Convert String to String Safe``() = StringBrokenInput.ToStringSafe() |> should equal StringBrokenInput
 
-[<Test>]
-let ``Convert Decimal to String Safe``() = DecimalInput.ToStringSafe() |> should equal (FloatingPointExpected.ToString())
+    [<Test>]
+    let ``Convert Int32 to String Safe``() = Int32Input.ToStringSafe() |> should equal (FixedPointExpected.ToString())
 
-[<Test>]
-let ``Convert null to String Safe``() = null.ToStringSafe() |> should be Null
+    [<Test>]
+    let ``Convert Decimal to String Safe``() = DecimalInput.ToStringSafe() |> should equal (FloatingPointExpected.ToString())
+
+    [<Test>]
+    let ``Convert null to String Safe``() = null.ToStringSafe() |> should be Null
+
+    [<Test>]
+    let ``Convert invalid object to ttring``() = ({TestId = 0}).ToStringSafe() |> should be Null
