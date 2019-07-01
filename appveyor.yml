@@ -1,4 +1,3 @@
-version: '{version}.{build}'
 configuration: Release
 dotnet_csproj:
   patch: true
