@@ -1,0 +1,6 @@
+version: 1.0.{build}
+configuration: Release
+build_script:
+- ps: dotnet build
+test_script:
+- ps: dotnet test --test-adapter-path:. --logger:Appveyor
