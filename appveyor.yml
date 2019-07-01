@@ -1,16 +1,14 @@
-environment:
-  var: '1.0.2'
-version: '{var}.{build}'
+version: '1.0.2.{build}'
 image: Visual Studio 2017
 configuration: Release
 dotnet_csproj:
   patch: true
   file: 'src\FluentCast\FluentCast.csproj'
-  version: '{var}'
-  package_version: '{var}'
-  assembly_version: '{var}'
-  file_version: '{var}'
-  informational_version: '{var}'
+  version: '1.0.2'
+  package_version: '1.0.2'
+  assembly_version: '1.0.2'
+  file_version: '1.0.2'
+  informational_version: '1.0.2'
 before_build:
   - ps: dotnet --version
 build_script:
