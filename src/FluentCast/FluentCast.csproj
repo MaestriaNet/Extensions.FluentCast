@@ -12,6 +12,7 @@
         <PackageProjectUrl>https://github.com/fabionaspolini/FluentCast</PackageProjectUrl>
         <PackageVersion>1.0.1</PackageVersion>
         <License>https://github.com/fabionaspolini/FluentCast/blob/master/LICENSE</License>
+        <PackageIconUrl>https://raw.githubusercontent.com/fabionaspolini/FluentCast/master/resources/icon-96.png</PackageIconUrl>
     </PropertyGroup>
 
     <PropertyGroup>
