@@ -16,11 +16,8 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    </PropertyGroup>
-
-    <PropertyGroup>
         <TargetFramework>netstandard1.0</TargetFramework>
+        <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
     </PropertyGroup>
 
 </Project>
