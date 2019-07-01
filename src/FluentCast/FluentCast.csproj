@@ -3,6 +3,7 @@
     <PropertyGroup>
         <PackageId>FluentCast</PackageId>
         <Version>1.0.2</Version>
+        <PackageVersion>1.0.2</PackageVersion>
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
         <Title>FluentCast - Simple data convert</Title>
