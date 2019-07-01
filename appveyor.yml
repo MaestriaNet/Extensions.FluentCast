@@ -8,10 +8,10 @@ artifacts:
   - path: src\FluentCast\bin\Release\*.nupkg
     name: NuGet
 deploy:
-- provider: NuGet
-  name: production
-  api_key:
-    secure: oy2d3ki3icxmjrfl5b3qhzyy6kj73xeubjqaoj2jiltasy
-  on:
-    branch: master
-    appveyor_repo_tag: true
+  - provider: NuGet
+    name: production
+    api_key:
+      secure: oy2d3ki3icxmjrfl5b3qhzyy6kj73xeubjqaoj2jiltasy
+    on:
+      branch: master
+      APPVEYOR_REPO_TAG: true
