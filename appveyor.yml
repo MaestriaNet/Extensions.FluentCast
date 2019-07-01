@@ -6,11 +6,11 @@ configuration: Release
 dotnet_csproj:
   patch: true
   file: 'src\FluentCast\FluentCast.csproj'
-  version: '{version}'
-  package_version: '{version}'
-  assembly_version: '{version}'
-  file_version: '{version}'
-  informational_version: '{version}'
+  version: '{var}'
+  package_version: '{var}'
+  assembly_version: '{var}'
+  file_version: '{var}'
+  informational_version: '{var}'
 before_build:
   - ps: dotnet --version
 build_script:
