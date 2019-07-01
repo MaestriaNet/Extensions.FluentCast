@@ -1,4 +1,3 @@
-version: '{branch}.{build}'
 configuration: Release
 build_script:
   - ps: dotnet build
