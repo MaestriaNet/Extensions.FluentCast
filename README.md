@@ -3,7 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
 [![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast)
 
-### What is AutoMapper?
+### What is FluentCast?
 This package provider a fluent syntax to simple data conversions
 
 ### How do I get started?
