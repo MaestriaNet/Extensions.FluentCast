@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("FluentCast.Test")]
-namespace FluentCast
+namespace FluentCast.Internal
 {
     internal static class ConvertExtensions
     {

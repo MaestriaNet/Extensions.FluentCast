@@ -2,7 +2,7 @@ namespace FluentCast.Test.Internal.``Convert Extensions``
 open System
 open FsUnit
 open NUnit.Framework
-open FluentCast
+open FluentCast.Internal
 open FluentCast.Test.Const
 
 module ``Convert Safe`` =
