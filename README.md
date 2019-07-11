@@ -1,41 +1,10 @@
 # FluentCast
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
-[![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast)
-[![MyGet](https://img.shields.io/myget/maestrianet/v/FluentCast.svg)](https://www.myget.org/feed/maestrianet/package/nuget/FluentCast)|
+[![NuGet](https://buildstats.info/nuget/FluentCast)](https://www.nuget.org/packages/FluentCast)
+[![MyGet](https://buildstats.info/myget/maestrianet/FluentCast)](https://www.myget.org/feed/maestrianet/package/nuget/FluentCast)
 
-| Resource | Status |
-|----------|--------|
-| Build    | [![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)        |
-| NuGet    | [![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast) |
-| MyGet    | [![MyGet](https://img.shields.io/myget/maestrianet/v/FluentCast.svg)](https://www.myget.org/feed/maestrianet/package/nuget/FluentCast)|       |
-
-<table border="0">
-  <tr>
-    <td>Build</td>
-    <td>
-        <a href="https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master">
-            <img src="https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true" />
-        </a>
-    </td>      
-  </tr>
-  <tr>
-    <td>NuGet</td>
-    <td>
-        <a href="https://www.nuget.org/packages/FluentCast">
-            <img src="https://img.shields.io/nuget/v/FluentCast.svg" />
-        </a>
-    </td>
-  </tr>
-  <tr>
-      <td>MyGet</td>
-      <td>
-          <a href="https://www.myget.org/feed/maestrianet/package/nuget/FluentCast">
-              <img src="https://img.shields.io/myget/maestrianet/v/FluentCast.svg" />
-          </a>
-      </td>
-    </tr>
-</table>
+[![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/fluentcast?branch=master)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/history?branch=master)
 
 ### What is FluentCast?
 This package provider a fluent syntax to simple data conversions
