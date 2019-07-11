@@ -10,9 +10,9 @@
 | NuGet    | [![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast) |
 | MyGet    | [![MyGet](https://img.shields.io/myget/maestrianet/v/FluentCast.svg)](https://www.myget.org/feed/maestrianet/package/nuget/FluentCast)|       |
 
-<table>
+<table border="0">
   <tr>
-    <td>Build Status</td>
+    <td>Build</td>
     <td>
         <a href="https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master">
             <img src="https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true" />
