@@ -1,4 +1,4 @@
-# FluentCast
+# Fluent Cast
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
 [![NuGet](https://buildstats.info/nuget/FluentCast)](https://www.nuget.org/packages/FluentCast)
@@ -6,8 +6,13 @@
 
 [![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/fluentcast?branch=master)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/history?branch=master)
 
-### What is FluentCast?
-This package provider a fluent syntax to simple data conversions
+### What is Fluent Cast?
+This package provider a fluent syntax to simple data conversions.
+Extension functions package for simple data convert.
+
+### What is Maestria Project?
+This library has
+Project to provide maximum productivity and elegance to your code.
 
 ### How do I get started?
 First, import "FluentCast" reference:

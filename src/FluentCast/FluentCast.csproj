@@ -5,9 +5,9 @@
         <Version>1.0.2</Version>
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
-        <Title>FluentCast - Simple data convert</Title>
-        <Description>This package provider a fluent syntax to simple data conversions</Description>
-        <PackageTags>fluent cast data conversion functional</PackageTags>
+        <Title>FluentCast - Simple data converter</Title>
+        <Description>Extension functions package for simple data convert.</Description>
+        <PackageTags>Cast Data Conversion Convert Converter Simple Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
         <RepositoryUrl>https://github.com/fabionaspolini/FluentCast</RepositoryUrl>
         <PackageProjectUrl>https://github.com/fabionaspolini/FluentCast</PackageProjectUrl>
         <License>https://github.com/fabionaspolini/FluentCast/blob/master/LICENSE</License>
