@@ -11,8 +11,9 @@ This package provider a fluent syntax to simple data conversions.
 Extension functions package for simple data convert.
 
 ### What is Maestria Project?
-This library has
-Project to provide maximum productivity and elegance to your code.
+This library is part of Maestria Project.
+
+Maestria is a project to provide maximum productivity and elegance to your code.
 
 ### How do I get started?
 First, import "FluentCast" reference:
