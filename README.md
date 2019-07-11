@@ -33,8 +33,8 @@ Then in your application code, use fluent syntax:
 
 // all to floating point
 "150.45".ToFloat();                                         // use default number culture configured at the application startup
-"150,45".ToDouble(CultureInfo.GetCultureInfo("en"));        // use USA decimal separator ","
-"150.45".ToDecimal(CultureInfo.GetCultureInfo("pt-BR"));    // use Brazil decimal separator "."
+"150.45".ToDouble(CultureInfo.GetCultureInfo("en"));        // use USA decimal separator ","
+"150,45".ToDecimal(CultureInfo.GetCultureInfo("pt-BR"));    // use Brazil decimal separator "."
 
 // all to date time
 "2019-06-29 13:31:59".ToDateTime();                                     // use default datetime culture configured at the application startup
