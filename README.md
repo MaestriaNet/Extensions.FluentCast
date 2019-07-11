@@ -2,6 +2,40 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
 [![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast)
+[![MyGet](https://img.shields.io/myget/maestrianet/v/FluentCast.svg)](https://www.myget.org/feed/maestrianet/package/nuget/FluentCast)|
+
+| Resource | Status |
+|----------|--------|
+| Build    | [![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)        |
+| NuGet    | [![NuGet](https://img.shields.io/nuget/v/FluentCast.svg)](https://www.nuget.org/packages/FluentCast) |
+| MyGet    | [![MyGet](https://img.shields.io/myget/maestrianet/v/FluentCast.svg)](https://www.myget.org/feed/maestrianet/package/nuget/FluentCast)|       |
+
+<table>
+  <tr>
+    <td>Build Status</td>
+    <td>
+        <a href="https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master">
+            <img src="https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true" />
+        </a>
+    </td>      
+  </tr>
+  <tr>
+    <td>NuGet</td>
+    <td>
+        <a href="https://www.nuget.org/packages/FluentCast">
+            <img src="https://img.shields.io/nuget/v/FluentCast.svg" />
+        </a>
+    </td>
+  </tr>
+  <tr>
+      <td>MyGet</td>
+      <td>
+          <a href="https://www.myget.org/feed/maestrianet/package/nuget/FluentCast">
+              <img src="https://img.shields.io/myget/maestrianet/v/FluentCast.svg" />
+          </a>
+      </td>
+    </tr>
+</table>
 
 ### What is FluentCast?
 This package provider a fluent syntax to simple data conversions
