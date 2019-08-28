@@ -1,8 +1,8 @@
-﻿namespace FluentCast.Test.``To String``
+﻿namespace Maestria.FluentCast.Test.``To String``
 open FsUnit
 open NUnit.Framework
-open FluentCast
-open FluentCast.Test.Const
+open Maestria.FluentCast
+open Maestria.FluentCast.Test.Const
 
 module ``Safe`` =
     type ExceptionToStringType =

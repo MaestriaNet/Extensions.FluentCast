@@ -1,4 +1,4 @@
-namespace FluentCast
+namespace Maestria.FluentCast
 {
     public static class ToStringExtensions
     {

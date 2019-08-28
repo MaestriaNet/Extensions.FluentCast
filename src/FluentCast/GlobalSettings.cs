@@ -1,7 +1,7 @@
 using System;
-using FluentCast.Settings;
+using Maestria.FluentCast.Settings;
 
-namespace FluentCast
+namespace Maestria.FluentCast
 {
     public static class GlobalSettings
     {

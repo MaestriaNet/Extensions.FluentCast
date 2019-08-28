@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace FluentCast.Settings
+namespace Maestria.FluentCast.Settings
 {
     public class FluentCastSettings
     {

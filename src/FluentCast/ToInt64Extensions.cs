@@ -1,7 +1,7 @@
 using System;
-using FluentCast.Internal;
+using Maestria.FluentCast.Internal;
 
-namespace FluentCast
+namespace Maestria.FluentCast
 {
     public static class ToInt64Extensions
     {

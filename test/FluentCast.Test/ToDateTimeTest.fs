@@ -1,9 +1,8 @@
-﻿//module FluentCast.Test.``To DateTime``
-namespace FluentCast.Test.``To DateTime``
+﻿namespace Maestria.FluentCast.Test.``To DateTime``
 open FsUnit
 open NUnit.Framework
-open FluentCast
-open FluentCast.Test.Const
+open Maestria.FluentCast
+open Maestria.FluentCast.Test.Const
 
 module ``Unsafe`` =
     [<Test>]

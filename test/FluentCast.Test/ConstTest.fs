@@ -1,4 +1,4 @@
-module FluentCast.Test.Const
+module Maestria.FluentCast.Test.Const
 open System
 open System.Globalization
 

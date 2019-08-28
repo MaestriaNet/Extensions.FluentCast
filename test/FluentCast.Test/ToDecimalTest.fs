@@ -1,8 +1,8 @@
-﻿namespace FluentCast.Test.``To Decimal``
+﻿namespace Maestria.FluentCast.Test.``To Decimal``
 open FsUnit
 open NUnit.Framework
-open FluentCast
-open FluentCast.Test.Const
+open Maestria.FluentCast
+open Maestria.FluentCast.Test.Const
 
 module ``Unsafe`` =
     [<Test>]

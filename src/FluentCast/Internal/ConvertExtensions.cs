@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("FluentCast.Test")]
-namespace FluentCast.Internal
+[assembly: InternalsVisibleTo("Maestria.FluentCast.Test")]
+namespace Maestria.FluentCast.Internal
 {
     internal static class ConvertExtensions
     {

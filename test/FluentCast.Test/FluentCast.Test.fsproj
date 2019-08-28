@@ -2,11 +2,9 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
+        <AssemblyName>Maestria.FluentCast.Test</AssemblyName>
+        <RootNamespace>Maestria.FluentCast.Test</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\..\src\FluentCast\FluentCast.csproj" />
-    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Appveyor.TestLogger" Version="2.0.0" />
@@ -27,5 +25,9 @@
         <Compile Include="ToInt32Test.fs" />
         <Compile Include="ToInt64Test.fs" />
         <Compile Include="ToStringSafeTest.fs" />
+    </ItemGroup>
+     
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\FluentCast\FluentCast.csproj" />
     </ItemGroup>
 </Project>

@@ -1,8 +1,8 @@
-# Fluent Cast
+# Maestria Fluent Cast
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3for8td8o4gbxd42/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
-[![NuGet](https://buildstats.info/nuget/FluentCast)](https://www.nuget.org/packages/FluentCast)
-[![MyGet](https://buildstats.info/myget/maestrianet/FluentCast)](https://www.myget.org/feed/maestrianet/package/nuget/FluentCast)
+[![NuGet](https://buildstats.info/nuget/Maestria.FluentCast)](https://www.nuget.org/packages/Maestria.FluentCast)
+[![MyGet](https://buildstats.info/myget/maestrianet/FluentCast)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.FluentCast)
 
 [![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/fluentcast?branch=master)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/history?branch=master)
 
@@ -16,10 +16,10 @@ This library is part of Maestria Project.
 Maestria is a project to provide maximum productivity and elegance to your code.
 
 ### How do I get started?
-First, import "FluentCast" reference:
+First, import "Maestria.FluentCast" reference:
 
 ```csharp
-using FluentCast;
+using Maestria.FluentCast;
 ```
 
 Then in your application code, use fluent syntax: 
@@ -70,13 +70,13 @@ FluentCast.GlobalSettings.Configure(cfg => cfg
 
 Where can I get it?
 
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [FluentCast](https://www.nuget.org/packages/FluentCast/) from the package manager console:
+First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.FluentCast](https://www.nuget.org/packages/Maestria.FluentCast/) from the package manager console:
 
 ```
-PM> Install-Package FluentCast
+PM> Install-Package Maestria.FluentCast
 ```
 
 or install from the dotnet cli command line:
 ```
-> dotnet add package FluentCast
+> dotnet add package Maestria.FluentCast
 ``` 
