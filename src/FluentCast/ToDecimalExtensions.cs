@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using Maestria.FluentCast.Internal;
 
 namespace Maestria.FluentCast
@@ -13,5 +14,8 @@ namespace Maestria.FluentCast
 
         public static decimal ToDecimalSafe(this object value, decimal @default, IFormatProvider provider = null) =>
             value.ToDecimalSafe(provider) ?? @default;
+
+        public static bool IsValidDecimal(this object value, IFormatProvider provider = null) =>
+            value.ToDecimalSafe(provider) != null;
     }
 }

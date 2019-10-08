@@ -74,3 +74,10 @@ module ``Safe`` =
 
     [<Test>]
     let ``Convert Double to Decimal Safe``() = DoubleInput.ToDecimalSafe() |> should equal FloatingPointExpected
+
+module ``Is Valid Decimal`` =
+    [<Test>]
+    let ``Valid Decimal``() = StringFloatingPointInvariantInput.IsValidDecimal() |> should be True
+
+    [<Test>]
+    let ``Invalid Decimal``() = StringBrokenInput.IsValidDecimal() |> should be False

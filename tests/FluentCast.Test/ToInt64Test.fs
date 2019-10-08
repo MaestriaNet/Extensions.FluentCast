@@ -59,3 +59,10 @@ module ``Safe`` =
 
     [<Test>]
     let ``Convert Double to Int64 Safe``() = DoubleInput.ToInt64Safe() |> should equal FixedPointExpected
+    
+module ``Is Valid Int64`` =
+    [<Test>]
+    let ``Valid Int64``() = StringFloatingPointInvariantInput.IsValidInt64() |> should be True
+
+    [<Test>]
+    let ``Invalid Int64``() = StringBrokenInput.IsValidInt64() |> should be False    

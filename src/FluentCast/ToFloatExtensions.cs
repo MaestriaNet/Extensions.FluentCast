@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using Maestria.FluentCast.Internal;
 
 namespace Maestria.FluentCast
@@ -13,5 +14,8 @@ namespace Maestria.FluentCast
 
         public static float ToFloatSafe(this object value, float @default, IFormatProvider provider = null) =>
             value.ToFloatSafe(provider) ?? @default;
+
+        public static bool IsValidFloat(this object value, IFormatProvider provider = null) =>
+            value.ToFloatSafe(provider) != null;
     }
 }

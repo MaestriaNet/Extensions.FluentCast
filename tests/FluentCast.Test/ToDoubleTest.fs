@@ -74,3 +74,10 @@ module ``Safe`` =
 
     [<Test>]
     let ``Convert Double to Double Safe``() = DoubleInput.ToDoubleSafe() |> should (equalWithin 0.0001) FloatingPointExpected
+    
+module ``Is Valid Double`` =
+    [<Test>]
+    let ``Valid Double``() = StringFloatingPointInvariantInput.IsValidDouble() |> should be True
+
+    [<Test>]
+    let ``Invalid Double``() = StringBrokenInput.IsValidDouble() |> should be False    

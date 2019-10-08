@@ -34,7 +34,14 @@ module ``Safe`` =
     let ``Convert String pt-BR to Date without time Safe``() = StringDatePtBrInput.ToDateTimeSafe(CulturePtBr) |> should equal DateExpected
 
     [<Test>]
-    let ``Convert String broken to Date Safe Nullable``() = StringBrokenInput.ToDateTimeSafe() |> should be null
+    let ``Convert String broken to Date Safe Nullable``() = StringBrokenInput.ToDateTimeSafe() |> should be Null
 
     [<Test>]
     let ``Convert String broken to Date Safe``() = StringBrokenInput.ToDateTimeSafe(DateTimeExpected) |> should equal DateTimeExpected
+
+module ``Is Valid DateTime`` =
+    [<Test>]
+    let ``Valid Date``() = StringDateInvariantInput.IsValidDateTime() |> should be True
+
+    [<Test>]
+    let ``Invalid Date``() = StringBrokenInput.IsValidDateTime() |> should be False

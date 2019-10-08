@@ -35,9 +35,10 @@ namespace Maestria.FluentCast
             }
         }
 
-        public static T ToEnumSafe<T>(this object value, T @default) where T : struct
-        {
-            return ToEnumSafe<T>(value) ?? @default;
-        }
+        public static T ToEnumSafe<T>(this object value, T @default) where T : struct =>
+            ToEnumSafe<T>(value) ?? @default;
+
+        public static bool IsValidEnum<T>(this object value) where T : struct =>
+            value.ToEnumSafe<T>() != null;
     }
 }

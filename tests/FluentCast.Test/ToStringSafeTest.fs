@@ -22,4 +22,4 @@ module ``Safe`` =
     let ``Convert null to String Safe``() = null.ToStringSafe() |> should be Null
 
     [<Test>]
-    let ``Convert invalid object to ttring``() = ({TestId = 0}).ToStringSafe() |> should be Null
+    let ``Convert invalid object to String``() = ({TestId = 0}).ToStringSafe() |> should be Null

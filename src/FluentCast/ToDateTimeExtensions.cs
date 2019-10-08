@@ -13,5 +13,8 @@ namespace Maestria.FluentCast
 
         public static DateTime ToDateTimeSafe(this object value, DateTime @default, IFormatProvider provider = null) =>
             value.ToDateTimeSafe(provider) ?? @default;
+
+        public static bool IsValidDateTime(this object value, IFormatProvider provider = null) =>
+            value.ToDateTimeSafe(provider) != null;
     }
 }

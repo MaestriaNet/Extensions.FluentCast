@@ -18,3 +18,10 @@ module ``Safe`` =
 
     [<Test>]
     let ``Convert String Broken to Guid Safe``() = StringBrokenInput.ToGuidSafe() |> should be null
+
+module ``Is Valid Guid`` =
+    [<Test>]
+    let ``Valid Guid``() = StringGuidInput.IsValidGuid() |> should be True
+
+    [<Test>]
+    let ``Invalid Guid``() = StringBrokenInput.IsValidGuid() |> should be False

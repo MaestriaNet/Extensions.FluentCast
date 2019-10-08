@@ -59,3 +59,10 @@ module ``Safe`` =
 
     [<Test>]
     let ``Convert Double to Int32 Safe``() = DoubleInput.ToInt32Safe() |> should equal FixedPointExpected
+    
+module ``Is Valid Int32`` =
+    [<Test>]
+    let ``Valid Int32``() = StringFloatingPointInvariantInput.IsValidInt32() |> should be True
+
+    [<Test>]
+    let ``Invalid Int32``() = StringBrokenInput.IsValidInt32() |> should be False    

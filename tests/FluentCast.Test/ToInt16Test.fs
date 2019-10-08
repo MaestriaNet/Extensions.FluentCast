@@ -65,3 +65,10 @@ module ``Safe`` =
 
     [<Test>]
     let ``Convert Double to Int16 Safe``() = DoubleInput.ToInt16Safe() |> should equal FixedPointExpected
+    
+module ``Is Valid Int16`` =
+    [<Test>]
+    let ``Valid Int16``() = StringFloatingPointInvariantInput.IsValidInt16() |> should be True
+
+    [<Test>]
+    let ``Invalid Int16``() = StringBrokenInput.IsValidInt16() |> should be False    
