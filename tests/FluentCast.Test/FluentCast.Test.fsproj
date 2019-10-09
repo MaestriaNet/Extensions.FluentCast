@@ -16,6 +16,7 @@
     <ItemGroup>
         <Compile Include="ConstTest.fs" />
         <Compile Include="Internal\ConvertExtensionsTest.fs" />
+        <Compile Include="CastExtensionsTest.fs" />
         <Compile Include="ToDateTimeTest.fs" />
         <Compile Include="ToDecimalTest.fs" />
         <Compile Include="ToDoubleTest.fs" />
