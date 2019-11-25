@@ -6,16 +6,19 @@
 
 [![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/fluentcast?branch=master)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/history?branch=master)
 
-### What is Fluent Cast?
+## What is Fluent Cast?
+
 This package provider a fluent syntax to simple data conversions.
 Extension functions package for simple data convert.
 
-### What is Maestria Project?
+## What is Maestria Project?
+
 This library is part of Maestria Project.
 
 Maestria is a project to provide maximum productivity and elegance to your code.
 
-### How do I get started?
+## How do I get started?
+
 First, import "Maestria.FluentCast" reference:
 
 ```csharp
@@ -62,6 +65,7 @@ Then in your application code, use fluent syntax:
 ```
 
 It's possible set default culture format for library, when not configured, default culture is CultureInfo.InvariantCulture:
+
 ```csharp
 FluentCast.GlobalSettings.Configure(cfg => cfg
     .NumberCulture(CultureInfo.InvariantCulture)
@@ -72,11 +76,12 @@ Where can I get it?
 
 First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.FluentCast](https://www.nuget.org/packages/Maestria.FluentCast/) from the package manager console:
 
-```
+```bash
 PM> Install-Package Maestria.FluentCast
 ```
 
 or install from the dotnet cli command line:
-```
+
+```bash
 > dotnet add package Maestria.FluentCast
-``` 
+```
