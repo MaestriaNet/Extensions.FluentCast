@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentCast", "src\FluentCast\FluentCast.csproj", "{38135DED-A07B-469A-850D-13EECDD86FDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentCast", "src\FluentCast.csproj", "{38135DED-A07B-469A-850D-13EECDD86FDC}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FluentCast.Test", "tests\FluentCast.Test\FluentCast.Test.fsproj", "{01217FDB-B5B1-4734-9BBD-E43B12909417}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FluentCast.Test", "tests\FluentCast.Test.fsproj", "{01217FDB-B5B1-4734-9BBD-E43B12909417}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{10626CDC-BF7B-447D-AC66-8C8E8AEB2393}"
 ProjectSection(SolutionItems) = preProject

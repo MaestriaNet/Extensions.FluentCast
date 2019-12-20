@@ -29,6 +29,6 @@
     </ItemGroup>
      
     <ItemGroup>
-      <ProjectReference Include="..\..\src\FluentCast\FluentCast.csproj" />
+      <ProjectReference Include="..\src\FluentCast.csproj" />
     </ItemGroup>
 </Project>
