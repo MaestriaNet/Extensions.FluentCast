@@ -23,3 +23,7 @@ deploy:
     name: Maestria MyGet
     on:
       branch: master
+  - provider: Environment
+    name: Maestria NuGet
+    on:
+      APPVEYOR_REPO_TAG: true
