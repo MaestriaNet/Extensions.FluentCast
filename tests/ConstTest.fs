@@ -15,6 +15,8 @@ let DecimalInput: decimal = 16.1m
 let FloatInput: float32 = 16.1F
 let DoubleInput: double = 16.1
 
+let StringInt32Bug = "1327857152"
+
 let StringEmptyInput = String.Empty
 let StringDateInvariantInput = "2019-05-30"
 let StringDateTimeInvariantInput = "2019-05-30 23:41:15"

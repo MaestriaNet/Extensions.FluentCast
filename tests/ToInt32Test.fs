@@ -32,6 +32,9 @@ module ``Unsafe`` =
     [<Test>]
     let ``Convert Double to Int32``() = DoubleInput.ToInt32() |> should equal FixedPointExpected
 
+    [<Test>]
+    let ``Convert String to Int32 Number bug``() = StringInt32Bug.ToInt32() |> should equal 1327857152
+
 module ``Safe`` =
     [<Test>]
     let ``Convert String to Int32 Safe``() = StringFixedPointInput.ToInt32Safe() |> should equal FixedPointExpected

@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    
     <PropertyGroup>
         <PackageId>Maestria.FluentCast</PackageId>
         <Version>1.0.3</Version>

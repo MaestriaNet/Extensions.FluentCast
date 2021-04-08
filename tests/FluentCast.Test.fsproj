@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
         <AssemblyName>Maestria.FluentCast.Test</AssemblyName>
         <RootNamespace>Maestria.FluentCast.Test</RootNamespace>
     </PropertyGroup>
@@ -12,7 +12,7 @@
         <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     </ItemGroup>
-     
+
     <ItemGroup>
         <Compile Include="ConstTest.fs" />
         <Compile Include="Internal\ConvertExtensionsTest.fs" />
