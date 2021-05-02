@@ -13,10 +13,10 @@
         <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/FluentCast/master/resources/icon-96.png</PackageIconUrl>
         <AssemblyName>Maestria.FluentCast</AssemblyName>
         <RootNamespace>Maestria.FluentCast</RootNamespace>
+        <TargetFrameworks>netstandard1.0;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
     <PropertyGroup>
-        <TargetFramework>netstandard1.0</TargetFramework>
         <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
     </PropertyGroup>
 
