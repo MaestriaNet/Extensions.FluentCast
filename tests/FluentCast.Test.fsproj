@@ -18,6 +18,7 @@
         <Compile Include="Internal\ConvertExtensionsTest.fs" />
         <Compile Include="CastExtensionsTest.fs" />
         <Compile Include="ToDateTimeTest.fs" />
+        <Compile Include="ToTimeSpanTest.fs" />
         <Compile Include="ToDecimalTest.fs" />
         <Compile Include="ToDoubleTest.fs" />
         <Compile Include="ToFloatTest.fs" />

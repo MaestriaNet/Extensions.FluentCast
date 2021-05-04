@@ -23,6 +23,8 @@ let StringDateTimeInvariantInput = "2019-05-30 23:41:15"
 let StringDatePtBrInput = "30/05/2019"
 let StringDateTimePtBrInput = "30/05/2019 23:41:15"
 let StringGuidInput = "ccc220ea-dd08-455f-b053-1002cc2bd117"
+let StringTimeSpanInvariantInput = "23:54:35"
+let StringTimeSpanGreater24HoursInvariantInput = "1.23:54:35"
 
 let StringBrokenInput = "!@#$%abc"
 
@@ -34,6 +36,8 @@ let FloatingPointExpected: decimal = 16.1m
 let DateExpected: DateTime = DateTime.ParseExact("2019-05-30", "yyyy-MM-dd", CultureInfo.InvariantCulture)
 let DateTimeExpected: DateTime = DateTime.ParseExact("2019-05-30 23:41:15", "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)
 let GuidExpected: Guid = Guid.Parse(StringGuidInput)
+let TimeSpanExpected = new TimeSpan(23, 54, 35)
+let TimeSpanGreater24HoursExpected = new TimeSpan(1, 23, 54, 35)
 
 /// ===========================================
 /// Constants
