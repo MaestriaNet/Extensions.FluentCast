@@ -52,6 +52,10 @@ Then in your application code, use fluent syntax:
 // all to string
 ((object) null).ToStringSafe(); // output is a null string
 
+// byte array
+<string>.ToByteArray()
+<string>.ToByteArray(<encoding>)
+
 // safe conversion support
 "broken input".ToInt32Safe();                   // output is nullable int
 "broken input".ToInt32Safe(-1);                 // output is -1

@@ -17,6 +17,7 @@
         <Compile Include="ConstTest.fs" />
         <Compile Include="Internal\ConvertExtensionsTest.fs" />
         <Compile Include="CastExtensionsTest.fs" />
+        <Compile Include="ToByteArrayTest.fs" />
         <Compile Include="ToDateTimeTest.fs" />
         <Compile Include="ToTimeSpanTest.fs" />
         <Compile Include="ToDecimalTest.fs" />
@@ -28,7 +29,7 @@
         <Compile Include="ToInt64Test.fs" />
         <Compile Include="ToStringSafeTest.fs" />
     </ItemGroup>
-     
+
     <ItemGroup>
       <ProjectReference Include="..\src\FluentCast.csproj" />
     </ItemGroup>
