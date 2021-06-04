@@ -18,6 +18,20 @@ This library is part of Maestria Project.
 
 Maestria is a project to provide maximum productivity and elegance to your code.
 
+## Where can I get it?
+
+First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.FluentCast](https://www.nuget.org/packages/Maestria.FluentCast/) from the package manager console:
+
+```bash
+PM> Install-Package Maestria.FluentCast
+```
+
+or install from the dotnet cli command line:
+
+```bash
+> dotnet add package Maestria.FluentCast
+```
+
 ## How do I get started?
 
 First, import "Maestria.FluentCast" reference:
@@ -75,20 +89,6 @@ It's possible set default culture format for library, when not configured, defau
 FluentCast.GlobalSettings.Configure(cfg => cfg
     .NumberCulture(CultureInfo.InvariantCulture)
     .DateTimeCulture(CultureInfo.GetCultureInfo("en")));
-```
-
-Where can I get it?
-
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.FluentCast](https://www.nuget.org/packages/Maestria.FluentCast/) from the package manager console:
-
-```bash
-PM> Install-Package Maestria.FluentCast
-```
-
-or install from the dotnet cli command line:
-
-```bash
-> dotnet add package Maestria.FluentCast
 ```
 
 [![buy-me-a-coffee](resources/buy-me-a-coffee.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
