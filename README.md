@@ -3,6 +3,8 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/81ctraq8ry13ma18/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
 [![NuGet](https://buildstats.info/nuget/Maestria.FluentCast)](https://www.nuget.org/packages/Maestria.FluentCast)
 [![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.FluentCast?label=MyGet)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.FluentCast)
+[![Apimundo](https://img.shields.io/badge/Maestria.FluentCast%20API-Apimundo-728199.svg)](https://apimundo.com/organizations/nuget-org/nuget-feeds/public/packages/Maestria.FluentCast/versions/latest?tab=types)
+
 
 [![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/fluentcast?branch=master)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/history?branch=master)
 
