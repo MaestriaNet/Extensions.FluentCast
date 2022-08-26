@@ -1,24 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
-        <PackageId>Maestria.Extensions.FluentCast</PackageId>
-        <Version>2.0.0</Version>
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
-        <Title>Maestria.Extensions.FluentCast - Simple data converter</Title>
         <Description>Extension functions package for simple data convert.</Description>
+        <License>https://github.com/MaestriaNet/Extensions.FluentCast/blob/master/LICENSE</License>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/Extensions.FluentCast/master/resources/icon.png</PackageIconUrl>
+        <PackageId>Maestria.Extensions.FluentCast</PackageId>
+        <PackageProjectUrl>https://github.com/MaestriaNet/Extensions.FluentCast</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>Cast Data Conversion Convert Converter Simple Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
-        <RepositoryUrl>https://github.com/MaestriaNet/FluentCast</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/MaestriaNet/FluentCast</PackageProjectUrl>
-        <License>https://github.com/MaestriaNet/FluentCast/blob/master/LICENSE</License>
-        <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/FluentCast/master/resources/icon-96.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/MaestriaNet/Extensions.FluentCast</RepositoryUrl>
+        <Title>Maestria.Extensions.FluentCast - Simple data converter</Title>
+        <Version>2.0.0</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
         <AssemblyName>Maestria.Extensions.FluentCast</AssemblyName>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+        <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
+        <LangVersion>9</LangVersion>
+        <NoWarn>CS1591</NoWarn>
         <RootNamespace>Maestria.Extensions.FluentCast</RootNamespace>
         <TargetFrameworks>netstandard1.0;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
-    <PropertyGroup>
-        <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
-        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-    </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\resources\icon.png" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
 </Project>
