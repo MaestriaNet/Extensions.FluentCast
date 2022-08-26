@@ -1,8 +1,8 @@
 using System;
 using System.Globalization;
-using Maestria.FluentCast.Internal;
+using Maestria.Extensions.FluentCast.Internal;
 
-namespace Maestria.FluentCast
+namespace Maestria.Extensions.FluentCast
 {
     public static class ToDoubleExtensions
     {

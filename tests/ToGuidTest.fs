@@ -1,9 +1,9 @@
-﻿namespace Maestria.FluentCast.Test.``To GUID``
+﻿namespace Maestria.Extensions.FluentCast.Test.``To GUID``
 open System
 open FsUnit
 open NUnit.Framework
-open Maestria.FluentCast
-open Maestria.FluentCast.Test.Const
+open Maestria.Extensions.FluentCast
+open Maestria.Extensions.FluentCast.Test.Const
 
 module ``Unsafe`` =
     [<Test>]

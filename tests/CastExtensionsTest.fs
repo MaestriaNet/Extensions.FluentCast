@@ -1,9 +1,9 @@
-﻿namespace Maestria.FluentCast.Test.``Cast Extensions``
+﻿namespace Maestria.Extensions.FluentCast.Test.``Cast Extensions``
 open System.Text
 open FsUnit
 open NUnit.Framework
-open Maestria.FluentCast
-open Maestria.FluentCast.Test.Const
+open Maestria.Extensions.FluentCast
+open Maestria.Extensions.FluentCast.Test.Const
 
 module ``Cast As`` =
     [<Test>]

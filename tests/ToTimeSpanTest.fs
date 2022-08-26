@@ -1,8 +1,8 @@
-﻿namespace Maestria.FluentCast.Test.``To TimeSpan``
+﻿namespace Maestria.Extensions.FluentCast.Test.``To TimeSpan``
 open FsUnit
 open NUnit.Framework
-open Maestria.FluentCast
-open Maestria.FluentCast.Test.Const
+open Maestria.Extensions.FluentCast
+open Maestria.Extensions.FluentCast.Test.Const
 
 module ``Unsafe`` =
     [<Test>]

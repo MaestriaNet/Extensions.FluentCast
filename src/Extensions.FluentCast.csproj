@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <PackageId>Maestria.FluentCast</PackageId>
-        <Version>1.0.8</Version>
+        <PackageId>Maestria.Extensions.FluentCast</PackageId>
+        <Version>2.0.0</Version>
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
-        <Title>Maestria.FluentCast - Simple data converter</Title>
+        <Title>Maestria.Extensions.FluentCast - Simple data converter</Title>
         <Description>Extension functions package for simple data convert.</Description>
         <PackageTags>Cast Data Conversion Convert Converter Simple Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
         <RepositoryUrl>https://github.com/MaestriaNet/FluentCast</RepositoryUrl>
         <PackageProjectUrl>https://github.com/MaestriaNet/FluentCast</PackageProjectUrl>
         <License>https://github.com/MaestriaNet/FluentCast/blob/master/LICENSE</License>
         <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/FluentCast/master/resources/icon-96.png</PackageIconUrl>
-        <AssemblyName>Maestria.FluentCast</AssemblyName>
-        <RootNamespace>Maestria.FluentCast</RootNamespace>
+        <AssemblyName>Maestria.Extensions.FluentCast</AssemblyName>
+        <RootNamespace>Maestria.Extensions.FluentCast</RootNamespace>
         <TargetFrameworks>netstandard1.0;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 

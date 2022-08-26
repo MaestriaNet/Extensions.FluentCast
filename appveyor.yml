@@ -1,14 +1,14 @@
-version: '1.0.8.{build}'
+version: '2.0.0.{build}'
 image: Visual Studio 2019
 configuration: Release
 dotnet_csproj:
   patch: true
   file: 'src\FluentCast.csproj'
-  version: '1.0.8'
-  package_version: '1.0.8'
-  assembly_version: '1.0.8'
-  file_version: '1.0.8'
-  informational_version: '1.0.8'
+  version: '2.0.0'
+  package_version: '2.0.0'
+  assembly_version: '2.0.0'
+  file_version: '2.0.0'
+  informational_version: '2.0.0'
 before_build:
   - ps: dotnet --version
 build_script:

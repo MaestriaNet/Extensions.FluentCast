@@ -1,7 +1,7 @@
 using System;
-using Maestria.FluentCast.Internal;
+using Maestria.Extensions.FluentCast.Internal;
 
-namespace Maestria.FluentCast
+namespace Maestria.Extensions.FluentCast
 {
     public static class ToBooleanExtensions
     {

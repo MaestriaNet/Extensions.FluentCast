@@ -1,6 +1,6 @@
 using System;
 
-namespace Maestria.FluentCast
+namespace Maestria.Extensions.FluentCast
 {
     public static class ToEnumExtensions
     {

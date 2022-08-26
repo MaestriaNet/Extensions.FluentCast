@@ -1,15 +1,15 @@
-# Maestria Fluent Cast
+# Maestria.Extensions.FluentCast
 
-[![Build status](https://ci.appveyor.com/api/projects/status/81ctraq8ry13ma18/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/branch/master)
-[![NuGet](https://buildstats.info/nuget/Maestria.FluentCast)](https://www.nuget.org/packages/Maestria.FluentCast)
-[![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.FluentCast?label=MyGet)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.FluentCast)
-[![Apimundo](https://img.shields.io/badge/Maestria.FluentCast%20API-Apimundo-728199.svg)](https://apimundo.com/organizations/nuget-org/nuget-feeds/public/packages/Maestria.FluentCast/versions/latest?tab=types)
+[![Build status](https://ci.appveyor.com/api/projects/status/81ctraq8ry13ma18/branch/master?svg=true)](https://ci.appveyor.com/project/fabionaspolini/maestria-extensions-fluentcast/branch/master)
+[![NuGet](https://buildstats.info/nuget/Maestria.Extensions.FluentCast)](https://www.nuget.org/packages/Maestria.Extensions.FluentCast)
+[![MyGet](https://img.shields.io/myget/maestrianet/v/Maestria.Extensions.FluentCast?label=MyGet)](https://www.myget.org/feed/maestrianet/package/nuget/Maestria.Extensions.FluentCast)
+[![Apimundo](https://img.shields.io/badge/Maestria.Extensions.FluentCast%20API-Apimundo-728199.svg)](https://apimundo.com/organizations/nuget-org/nuget-feeds/public/packages/Maestria.Extensions.FluentCast/versions/latest?tab=types)
 
 
-[![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/fluentcast?branch=master)](https://ci.appveyor.com/project/fabionaspolini/fluentcast/history?branch=master)
+[![Build History](https://buildstats.info/appveyor/chart/fabionaspolini/maestria-extensions-fluentcast?branch=master)](https://ci.appveyor.com/project/fabionaspolini/maestria-extensions-fluentcast/history?branch=master)
 
-[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
-## What is Fluent Cast?
+[![donate](https://raw.githubusercontent.com/MaestriaNet/Extensions.FluentCast/master/resources/btn_donate.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+## What is Maestria.Extensions.FluentCast?
 
 This package provider a fluent syntax to simple data conversions.
 Extension functions package for simple data convert.
@@ -22,27 +22,27 @@ Maestria is a project to provide maximum productivity and elegance to your code.
 
 ## Where can I get it?
 
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.FluentCast](https://www.nuget.org/packages/Maestria.FluentCast/) from the package manager console:
+First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.Extensions.FluentCast](https://www.nuget.org/packages/Maestria.Extensions.FluentCast/) from the package manager console:
 
 ```bash
-PM> Install-Package Maestria.FluentCast
+PM> Install-Package Maestria.Extensions.FluentCast
 ```
 
 or install from the dotnet cli command line:
 
 ```bash
-> dotnet add package Maestria.FluentCast
+> dotnet add package Maestria.Extensions.FluentCast
 ```
 
 ## How do I get started?
 
-First, import "Maestria.FluentCast" reference:
+First, import "Maestria.Extensions.FluentCast" reference:
 
 ```csharp
-using Maestria.FluentCast;
+using Maestria.Extensions.FluentCast;
 ```
 
-Then in your application code, use fluent syntax: 
+Then in your application code, use fluent syntax:
 
 ```csharp
 // all to fixed point
@@ -63,7 +63,7 @@ Then in your application code, use fluent syntax:
 "29/06/2019 13:31:59".ToDateTime(CultureInfo.GetCultureInfo("pt-BR"));  // use Brazil datetime format "dd/MM/yyyy HH:mm"
 
 // string to guid
-"a7fb69ba-7922-4d88-9569-d8d0d6641b86".ToGuid(); // output is a Guid 
+"a7fb69ba-7922-4d88-9569-d8d0d6641b86".ToGuid(); // output is a Guid
 
 // all to string
 ((object) null).ToStringSafe(); // output is a null string
@@ -93,9 +93,9 @@ FluentCast.GlobalSettings.Configure(cfg => cfg
     .DateTimeCulture(CultureInfo.GetCultureInfo("en")));
 ```
 
-[![buy-me-a-coffee](resources/buy-me-a-coffee.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
-[![smile.png](resources/smile.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+[![buy-me-a-coffee](https://raw.githubusercontent.com/MaestriaNet/Extensions.FluentCast/master/resources/buy-me-a-coffee.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+[![smile.png](https://raw.githubusercontent.com/MaestriaNet/Extensions.FluentCast/master/resources/smile.png)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
 
 If my contributions helped you, please help me buy a coffee :D
 
-[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)
+[![donate](https://raw.githubusercontent.com/MaestriaNet/Extensions.FluentCast/master/resources/btn_donate.gif)](https://www.paypal.com/donate?hosted_button_id=8RSES6GAYH9BL)

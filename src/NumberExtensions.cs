@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Maestria.FluentCast
+namespace Maestria.Extensions.FluentCast
 {
     public static class NumberExtensions
     {

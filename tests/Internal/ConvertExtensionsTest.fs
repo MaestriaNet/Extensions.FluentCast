@@ -1,9 +1,9 @@
-namespace Maestria.FluentCast.Test.Internal.``Convert Extensions``
+namespace Maestria.Extensions.FluentCast.Test.Internal.``Convert Extensions``
 open System
 open FsUnit
 open NUnit.Framework
-open Maestria.FluentCast.Internal
-open Maestria.FluentCast.Test.Const
+open Maestria.Extensions.FluentCast.Internal
+open Maestria.Extensions.FluentCast.Test.Const
 
 module ``Convert Safe`` =
     [<Test>]

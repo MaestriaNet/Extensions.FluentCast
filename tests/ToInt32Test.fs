@@ -1,8 +1,8 @@
-﻿namespace Maestria.FluentCast.Test.``To Int 32``
+﻿namespace Maestria.Extensions.FluentCast.Test.``To Int 32``
 open FsUnit
 open NUnit.Framework
-open Maestria.FluentCast
-open Maestria.FluentCast.Test.Const
+open Maestria.Extensions.FluentCast
+open Maestria.Extensions.FluentCast.Test.Const
 
 module ``Unsafe`` =
     [<Test>]

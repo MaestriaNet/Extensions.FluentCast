@@ -1,7 +1,7 @@
-﻿namespace Maestria.FluentCast.Test.``To Byte Array``
+﻿namespace Maestria.Extensions.FluentCast.Test.``To Byte Array``
 open FsUnit
 open NUnit.Framework
-open Maestria.FluentCast
+open Maestria.Extensions.FluentCast
 
 module ``Unsafe`` =
     [<Test>]
