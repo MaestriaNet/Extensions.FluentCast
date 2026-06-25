@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="appveyor.yml" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src/Extensions.FluentCast.csproj" />
+  <Project Path="tests/Extensions.FluentCast.Test.fsproj" />
+</Solution>
