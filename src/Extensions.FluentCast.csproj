@@ -1,9 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
+    <PropertyGroup Label="Build">
+        <TargetFrameworks>net10.0;net9.0;net8.0;net6.0;net5.0;netstandard2.0;netstandard1.0</TargetFrameworks>
+        <AssemblyName>Maestria.Extensions.FluentCast</AssemblyName>
+        <RootNamespace>Maestria.Extensions.FluentCast</RootNamespace>
+        <LangVersion>14</LangVersion>
+        <NoWarn>CS1591</NoWarn>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package info">
         <Authors>Fábio Monteiro Naspolini</Authors>
         <Company>Fábio Monteiro Naspolini</Company>
         <Description>Extension functions package for simple data convert.</Description>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
         <License>https://github.com/MaestriaNet/Extensions.FluentCast/blob/master/LICENSE</License>
         <PackageIcon>icon.png</PackageIcon>
         <PackageIconUrl>https://raw.githubusercontent.com/MaestriaNet/Extensions.FluentCast/master/resources/icon.png</PackageIconUrl>
@@ -13,22 +23,11 @@
         <PackageTags>Cast Data Conversion Convert Converter Simple Fluent Functional Elegance Productivity Maestria Mastery</PackageTags>
         <RepositoryUrl>https://github.com/MaestriaNet/Extensions.FluentCast</RepositoryUrl>
         <Title>Maestria.Extensions.FluentCast - Simple data converter</Title>
-        <Version>2.0.0</Version>
     </PropertyGroup>
-
-    <PropertyGroup>
-        <AssemblyName>Maestria.Extensions.FluentCast</AssemblyName>
-        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-        <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
-        <LangVersion>9</LangVersion>
-        <NoWarn>CS1591</NoWarn>
-        <RootNamespace>Maestria.Extensions.FluentCast</RootNamespace>
-        <TargetFrameworks>netstandard1.0;netstandard2.0</TargetFrameworks>
-    </PropertyGroup>
-
-    <ItemGroup>
-        <None Include="..\README.md" Pack="true" PackagePath="\"/>
-        <None Include="..\resources\icon.png" Pack="true" PackagePath="\"/>
+    
+    <ItemGroup Label="Package files">
+        <None Include="..\README.md" Pack="true" PackagePath="\" Visible="false" />
+        <None Include="..\resources\icon.png" Pack="true" PackagePath="\" Visible="false" />
     </ItemGroup>
 
 </Project>
