@@ -4,6 +4,6 @@
             Double validation is used only as a safety measure to ensure 
             that the release branch name matches the expected version. 
         -->
-        <VersionPrefix>2.0.0</VersionPrefix>
+        <VersionPrefix>2.1.0</VersionPrefix>
     </PropertyGroup>
 </Project>
