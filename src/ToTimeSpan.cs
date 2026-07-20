@@ -13,10 +13,10 @@ namespace Maestria.Extensions.FluentCast
         }
         
         public static TimeSpan ToTimeSpan(this object value, IFormatProvider provider = null) =>
-            value.ConvertTo(v => Convert(v, provider ?? GlobalSettings.Properties.DateTimeCulture));
+            value.ConvertTo(v => Convert(v, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
 
         public static TimeSpan? ToTimeSpanSafe(this object value, IFormatProvider provider = null) =>
-            value.ConvertToSafe(v => Convert(value, provider ?? GlobalSettings.Properties.DateTimeCulture));
+            value.ConvertToSafe(v => Convert(value, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
 
         public static TimeSpan ToTimeSpanSafe(this object value, TimeSpan @default, IFormatProvider provider = null) =>
             value.ToTimeSpanSafe(provider) ?? @default;
