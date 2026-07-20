@@ -2,20 +2,19 @@ using System;
 using System.Globalization;
 using Maestria.Extensions.FluentCast.Internal;
 
-namespace Maestria.Extensions.FluentCast
+namespace Maestria.Extensions.FluentCast;
+
+public static class ToDoubleExtensions
 {
-    public static class ToDoubleExtensions
-    {
-        public static double ToDouble(this object value, IFormatProvider provider = null) =>
-            value.ConvertTo(v => Convert.ToDouble(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
+    public static double ToDouble(this object value, IFormatProvider provider = null) =>
+        value.ConvertTo(v => Convert.ToDouble(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
 
-        public static double? ToDoubleSafe(this object value, IFormatProvider provider = null) =>
-            value.ConvertToSafe(v => Convert.ToDouble(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
+    public static double? ToDoubleSafe(this object value, IFormatProvider provider = null) =>
+        value.ConvertToSafe(v => Convert.ToDouble(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
 
-        public static double ToDoubleSafe(this object value, double @default, IFormatProvider provider = null) =>
-            value.ToDoubleSafe(provider) ?? @default;
+    public static double ToDoubleSafe(this object value, double @default, IFormatProvider provider = null) =>
+        value.ToDoubleSafe(provider) ?? @default;
 
-        public static bool IsValidDouble(this object value, IFormatProvider provider = null) =>
-            value.ToDoubleSafe(provider) != null;
-    }
+    public static bool IsValidDouble(this object value, IFormatProvider provider = null) =>
+        value.ToDoubleSafe(provider) != null;
 }

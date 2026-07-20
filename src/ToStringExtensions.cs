@@ -1,22 +1,21 @@
-namespace Maestria.Extensions.FluentCast
+namespace Maestria.Extensions.FluentCast;
+
+public static class ToStringExtensions
 {
-    public static class ToStringExtensions
+    /// <summary>
+    /// Convert to string safe. Returning null when error occur
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
+    public static string ToStringSafe(this object value)
     {
-        /// <summary>
-        /// Convert to string safe. Returning null when error occur
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static string ToStringSafe(this object value)
+        try
         {
-            try
-            {
-                return value?.ToString();
-            }
-            catch
-            {
-                return null;
-            }
+            return value?.ToString();
+        }
+        catch
+        {
+            return null;
         }
     }
 }

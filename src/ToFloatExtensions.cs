@@ -2,20 +2,19 @@ using System;
 using System.Globalization;
 using Maestria.Extensions.FluentCast.Internal;
 
-namespace Maestria.Extensions.FluentCast
+namespace Maestria.Extensions.FluentCast;
+
+public static class ToFloatExtensions
 {
-    public static class ToFloatExtensions
-    {
-        public static float ToFloat(this object value, IFormatProvider provider = null) =>
-            value.ConvertTo(v => Convert.ToSingle(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
+    public static float ToFloat(this object value, IFormatProvider provider = null) =>
+        value.ConvertTo(v => Convert.ToSingle(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
 
-        public static float? ToFloatSafe(this object value, IFormatProvider provider = null) =>
-            value.ConvertToSafe(v => Convert.ToSingle(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
+    public static float? ToFloatSafe(this object value, IFormatProvider provider = null) =>
+        value.ConvertToSafe(v => Convert.ToSingle(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
 
-        public static float ToFloatSafe(this object value, float @default, IFormatProvider provider = null) =>
-            value.ToFloatSafe(provider) ?? @default;
+    public static float ToFloatSafe(this object value, float @default, IFormatProvider provider = null) =>
+        value.ToFloatSafe(provider) ?? @default;
 
-        public static bool IsValidFloat(this object value, IFormatProvider provider = null) =>
-            value.ToFloatSafe(provider) != null;
-    }
+    public static bool IsValidFloat(this object value, IFormatProvider provider = null) =>
+        value.ToFloatSafe(provider) != null;
 }

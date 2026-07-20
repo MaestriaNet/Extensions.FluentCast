@@ -1,20 +1,19 @@
 using System;
 using Maestria.Extensions.FluentCast.Internal;
 
-namespace Maestria.Extensions.FluentCast
+namespace Maestria.Extensions.FluentCast;
+
+public static class ToDateTimeExtensions
 {
-    public static class ToDateTimeExtensions
-    {
-        public static DateTime ToDateTime(this object value, IFormatProvider provider = null) =>
-            value.ConvertTo(v => Convert.ToDateTime((object) v, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
+    public static DateTime ToDateTime(this object value, IFormatProvider provider = null) =>
+        value.ConvertTo(v => Convert.ToDateTime((object) v, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
 
-        public static DateTime? ToDateTimeSafe(this object value, IFormatProvider provider = null) =>
-            value.ConvertToSafe(v => Convert.ToDateTime(value, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
+    public static DateTime? ToDateTimeSafe(this object value, IFormatProvider provider = null) =>
+        value.ConvertToSafe(v => Convert.ToDateTime(value, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
 
-        public static DateTime ToDateTimeSafe(this object value, DateTime @default, IFormatProvider provider = null) =>
-            value.ToDateTimeSafe(provider) ?? @default;
+    public static DateTime ToDateTimeSafe(this object value, DateTime @default, IFormatProvider provider = null) =>
+        value.ToDateTimeSafe(provider) ?? @default;
 
-        public static bool IsValidDateTime(this object value, IFormatProvider provider = null) =>
-            value.ToDateTimeSafe(provider) != null;
-    }
+    public static bool IsValidDateTime(this object value, IFormatProvider provider = null) =>
+        value.ToDateTimeSafe(provider) != null;
 }
