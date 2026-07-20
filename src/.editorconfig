@@ -1,2 +1,3 @@
 [*.cs]
 resharper_check_namespace_highlighting = none
+resharper_convert_to_extension_block_highlighting = none

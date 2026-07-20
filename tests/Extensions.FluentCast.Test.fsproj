@@ -4,6 +4,7 @@
         <AssemblyName>Maestria.Extensions.FluentCast.Test</AssemblyName>
         <RootNamespace>Maestria.Extensions.FluentCast.Test</RootNamespace>
         <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks>
+        <RollForward>LatestMajor</RollForward>
     </PropertyGroup>
 
     <ItemGroup>

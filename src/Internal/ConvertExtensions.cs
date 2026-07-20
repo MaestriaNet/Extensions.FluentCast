@@ -7,7 +7,7 @@ namespace Maestria.Extensions.FluentCast.Internal;
 internal static class ConvertExtensions
 {
     /// <summary>
-    /// Unsafe convert data
+    /// Unsafe convert data.
     /// </summary>
     /// <param name="value"></param>
     /// <param name="convertFunction"></param>
@@ -15,28 +15,30 @@ internal static class ConvertExtensions
     /// <returns></returns>
     public static T ConvertTo<T>(this object value, Func<object, T> convertFunction)
     {
-        if (value is T @out) return @out;
+        if (value is T @out)
+            return @out;
         return convertFunction(value);
     }
 
     /// <summary>
-    /// Try convert value, when throw exception returns null value
+    /// Try to convert value, when throw exception returns null value.
     /// </summary>
     /// <param name="value"></param>
-    /// <param name="convertFuncion"></param>
+    /// <param name="convertFunction"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T? ConvertToSafe<T>(this object value, Func<object, T> convertFuncion)
+    public static T? ConvertToSafe<T>(this object value, Func<object, T> convertFunction)
         where T : struct
     {
         try
         {
-            switch (value)
+            return value switch
             {
-                case null: return null;
-                case string str when string.IsNullOrWhiteSpace(str): return null;
-                default: return value.ConvertTo(convertFuncion);
-            }
+                null => null,
+                string str when string.IsNullOrWhiteSpace(str) => null,
+                T result => result,
+                _ => value.ConvertTo(convertFunction)
+            };
         }
         catch
         {
