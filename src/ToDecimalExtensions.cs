@@ -10,7 +10,7 @@ public static class ToDecimalExtensions
         value.ConvertTo(v => Convert.ToDecimal(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
 
     public static decimal? ToDecimalSafe(this object value, IFormatProvider provider = null) =>
-        value.ConvertToSafe(v => Convert.ToDecimal(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
+        value.ConvertToSafe(v => v.ToDecimal(provider));
 
     public static decimal ToDecimalSafe(this object value, decimal @default, IFormatProvider provider = null) =>
         value.ToDecimalSafe(provider) ?? @default;

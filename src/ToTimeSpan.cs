@@ -9,7 +9,7 @@ public static class ToTimeSpanExtensions
         value.ConvertTo(v => TimeSpan.Parse(v.ToString()!, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
 
     public static TimeSpan? ToTimeSpanSafe(this object value, IFormatProvider provider = null) =>
-        value.ConvertToSafe(v => TimeSpan.Parse(value.ToString()!, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
+        value.ConvertToSafe(v => v.ToTimeSpan(provider));
 
     public static TimeSpan ToTimeSpanSafe(this object value, TimeSpan @default, IFormatProvider provider = null) =>
         value.ToTimeSpanSafe(provider) ?? @default;

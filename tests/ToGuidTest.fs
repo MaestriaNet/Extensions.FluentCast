@@ -1,4 +1,4 @@
-﻿namespace Maestria.Extensions.FluentCast.Test.``To GUID``
+﻿namespace Maestria.Extensions.FluentCast.Test.``To Guid``
 open System
 open FsUnit
 open NUnit.Framework
