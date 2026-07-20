@@ -28,16 +28,10 @@ Maestria is a project to provide maximum productivity and elegance to your code.
 
 ## Where can I get it?
 
-First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget). Then, install [Maestria.Extensions.FluentCast](https://www.nuget.org/packages/Maestria.Extensions.FluentCast/) from the package manager console:
+Install the [Maestria.Extensions.FluentCast](https://www.nuget.org/packages/Maestria.Extensions.FluentCast/) using the command line:
 
 ```bash
-PM> Install-Package Maestria.Extensions.FluentCast
-```
-
-or install from the dotnet cli command line:
-
-```bash
-> dotnet add package Maestria.Extensions.FluentCast
+dotnet add package Maestria.Extensions.FluentCast
 ```
 
 ## How do I get started?
