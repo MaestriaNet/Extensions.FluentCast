@@ -13,7 +13,7 @@ namespace Maestria.Extensions.FluentCast
         /// <param name="provider"></param>
         /// <returns></returns>
         public static bool IsValidInteger(this string value, IFormatProvider provider = null) =>
-            long.TryParse(value, NumberStyles.Integer, provider ?? GlobalSettings.Properties.NumberCulture, out _);
+            long.TryParse(value, NumberStyles.Integer, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture, out _);
 
         /// <summary>
         /// Check if string is a valid floating point value
@@ -22,7 +22,7 @@ namespace Maestria.Extensions.FluentCast
         /// <param name="provider"></param>
         /// <returns></returns>
         public static bool IsValidFloatingPoint(this string value, IFormatProvider provider = null) =>
-            decimal.TryParse(value, NumberStyles.Float, provider ?? GlobalSettings.Properties.NumberCulture, out _);
+            decimal.TryParse(value, NumberStyles.Float, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture, out _);
 
         /// <summary>
         /// Check if string is a valid currency value
@@ -31,6 +31,6 @@ namespace Maestria.Extensions.FluentCast
         /// <param name="provider"></param>
         /// <returns></returns>
         public static bool IsValidCurrency(this string value, IFormatProvider provider = null) =>
-            decimal.TryParse(value, NumberStyles.Currency, provider ?? GlobalSettings.Properties.NumberCulture, out _);
+            decimal.TryParse(value, NumberStyles.Currency, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture, out _);
     }
 }

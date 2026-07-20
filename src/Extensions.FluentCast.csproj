@@ -29,5 +29,13 @@
         <None Include="..\README.md" Pack="true" PackagePath="\" Visible="false" />
         <None Include="..\resources\icon.png" Pack="true" PackagePath="\" Visible="false" />
     </ItemGroup>
+    
+    <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.0'">
+      <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    </ItemGroup>
+    
+    <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+      <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    </ItemGroup>
 
 </Project>
