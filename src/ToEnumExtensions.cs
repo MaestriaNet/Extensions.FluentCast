@@ -7,9 +7,10 @@ public static class ToEnumExtensions
     public static T ToEnum<T>(this object value) where T : struct
     {
         if (value == null)
-            throw new ArgumentNullException("Null value not supported to convert to enum.");
+            throw new ArgumentNullException(nameof(value), "Null value not supported to convert to enum.");
 
-        if (value is T result) return result;
+        if (value is T result)
+            return result;
 
         var enumType = typeof(T);
 

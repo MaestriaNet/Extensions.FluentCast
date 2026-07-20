@@ -24,10 +24,10 @@ internal static class ConvertExtensions
     /// Try to convert value, when throw exception returns null value.
     /// </summary>
     /// <param name="value"></param>
-    /// <param name="convertFuncion"></param>
+    /// <param name="convertFunction"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T? ConvertToSafe<T>(this object value, Func<object, T> convertFuncion)
+    public static T? ConvertToSafe<T>(this object value, Func<object, T> convertFunction)
         where T : struct
     {
         try
@@ -37,7 +37,7 @@ internal static class ConvertExtensions
                 null => null,
                 string str when string.IsNullOrWhiteSpace(str) => null,
                 T result => result,
-                _ => value.ConvertTo(convertFuncion)
+                _ => value.ConvertTo(convertFunction)
             };
         }
         catch
