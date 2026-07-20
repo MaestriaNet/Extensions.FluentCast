@@ -3,7 +3,7 @@ namespace Maestria.Extensions.FluentCast;
 public static class CastExtensions
 {
     /// <summary>
-    /// Safe cast "value as T"
+    /// Safe cast "value as T".
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="value"></param>
@@ -11,7 +11,7 @@ public static class CastExtensions
     public static T CastAs<T>(this object value) where T : class => value as T;
 
     /// <summary>
-    /// Unsafe cast "(T)value"
+    /// Unsafe cast "(T)value".
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="value"></param>
