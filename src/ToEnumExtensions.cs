@@ -1,43 +1,22 @@
 using System;
+using Maestria.Extensions.FluentCast.Internal;
 
 namespace Maestria.Extensions.FluentCast;
 
 public static class ToEnumExtensions
 {
-    public static T ToEnum<T>(this object value) where T : struct
+    public static T ToEnum<T>(this object value) where T : struct => value switch
     {
-        if (value == null)
-            throw new ArgumentNullException(nameof(value), "Null value not supported to convert to enum.");
+        null => throw new ArgumentNullException(nameof(value), "Null value not supported to convert to enum."),
+        T result => result,
+        char => (T)Enum.ToObject(typeof(T), Convert.ToChar(value)),
+        byte or int or sbyte => (T)Enum.ToObject(typeof(T), Convert.ToByte(value)),
+        _ => (T)Enum.Parse(typeof(T), value.ToString()!)
+    };
 
-        if (value is T result)
-            return result;
+    public static T? ToEnumSafe<T>(this object value) where T : struct => value.ConvertToSafe(v => v.ToEnum<T>());
 
-        var enumType = typeof(T);
-
-        if (value is char)
-            return (T) Enum.ToObject(typeof(T), Convert.ToChar(value));
-
-        if (value is byte || value is int || value is sbyte)
-            return (T) Enum.ToObject(typeof(T), Convert.ToByte(value));
-
-        var enumValue = Enum.Parse(enumType, value.ToString());
-        return (T) enumValue;
-    }
-
-    public static T? ToEnumSafe<T>(this object value) where T : struct
-    {
-        try
-        {
-            return ToEnum<T>(value);
-        }
-        catch
-        {
-            return null;
-        }
-    }
-
-    public static T ToEnumSafe<T>(this object value, T @default) where T : struct =>
-        ToEnumSafe<T>(value) ?? @default;
+    public static T ToEnumSafe<T>(this object value, T @default) where T : struct => value.ToEnumSafe<T>() ?? @default;
 
     public static bool IsValidEnum<T>(this object value) where T : struct =>
         value.ToEnumSafe<T>() != null;
