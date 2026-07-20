@@ -36,6 +36,7 @@ internal static class ConvertExtensions
             {
                 null => null,
                 string str when string.IsNullOrWhiteSpace(str) => null,
+                T result => result,
                 _ => value.ConvertTo(convertFuncion)
             };
         }
