@@ -90,9 +90,9 @@ Then in your application code, use fluent syntax:
 It's possible set default culture format for library, when not configured, default culture is CultureInfo.InvariantCulture:
 
 ```csharp
-MaestriaFluentCastSettings.Configure(cfg => cfg
-    .NumberCulture(CultureInfo.InvariantCulture)
-    .DateTimeCulture(CultureInfo.GetCultureInfo("en")));
+MaestriaFluentCastSettings.Configure(config => config
+    .NumberCulture(<culture-info>) // Default is CultureInfo.InvariantCulture
+    .DateTimeCulture(<culture-info>)); // Default is CultureInfo.InvariantCulture
 ```
 
 ---
