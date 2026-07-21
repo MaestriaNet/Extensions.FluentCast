@@ -9,7 +9,7 @@ public static class ToDateTimeExtensions
         value.ConvertTo(v => Convert.ToDateTime(v, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
 
     public static DateTime? ToDateTimeSafe(this object value, IFormatProvider provider = null) =>
-        value.ConvertToSafe(v => Convert.ToDateTime(value, provider ?? MaestriaFluentCastSettings.Properties.DateTimeCulture));
+        value.ConvertToSafe(v => v.ToDateTime(provider));
 
     public static DateTime ToDateTimeSafe(this object value, DateTime @default, IFormatProvider provider = null) =>
         value.ToDateTimeSafe(provider) ?? @default;

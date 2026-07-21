@@ -10,7 +10,7 @@ public static class ToFloatExtensions
         value.ConvertTo(v => Convert.ToSingle(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
 
     public static float? ToFloatSafe(this object value, IFormatProvider provider = null) =>
-        value.ConvertToSafe(v => Convert.ToSingle(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
+        value.ConvertToSafe(v => value.ToFloat(provider));
 
     public static float ToFloatSafe(this object value, float @default, IFormatProvider provider = null) =>
         value.ToFloatSafe(provider) ?? @default;

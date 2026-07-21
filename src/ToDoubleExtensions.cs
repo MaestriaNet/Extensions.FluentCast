@@ -10,7 +10,7 @@ public static class ToDoubleExtensions
         value.ConvertTo(v => Convert.ToDouble(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
 
     public static double? ToDoubleSafe(this object value, IFormatProvider provider = null) =>
-        value.ConvertToSafe(v => Convert.ToDouble(value, provider ?? MaestriaFluentCastSettings.Properties.NumberCulture));
+        value.ConvertToSafe(v => v.ToDouble(provider));
 
     public static double ToDoubleSafe(this object value, double @default, IFormatProvider provider = null) =>
         value.ToDoubleSafe(provider) ?? @default;

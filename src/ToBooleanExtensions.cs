@@ -7,7 +7,7 @@ public static class ToBooleanExtensions
 {
     public static bool ToBoolean(this object value) => value.ConvertTo(Convert.ToBoolean);
 
-    public static bool? ToBooleanSafe(this object value) => value.ConvertToSafe(Convert.ToBoolean);
+    public static bool? ToBooleanSafe(this object value) => value.ConvertToSafe(v => v.ToBoolean());
 
     public static bool ToBooleanSafe(this object value, bool @default) => value.ToBooleanSafe() ?? @default;
 
